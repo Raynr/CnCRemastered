@@ -2971,7 +2971,11 @@ typedef enum StrategyType : unsigned char {
 
 #endif //USE_RA_AI
 
+/* start of Mod definitions */
 
+#define	MAX_PASSENGERS	6
+
+/* end of Mod definitions */
 
 #pragma warning (pop)
 

@@ -749,8 +749,7 @@ static UnitTypeClass const UnitMCV(
  *=============================================================================================*/
 // Jeep (hummer)
 static UnitTypeClass const UnitJeep(
-	UNIT_JEEP|
-	UNIT_APC,
+	UNIT_JEEP,
 	TXT_JEEP,								// NAME:			Text name of this unit type.
 	"JEEP",									// NAME:			Text name of this unit type.
 	ANIM_FRAG1,							// EXPLOSION:	Type of explosion when destroyed.

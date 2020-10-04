@@ -669,7 +669,7 @@ RadioMessageType UnitClass::Receive_Message(RadioClass * from, RadioMessageType 
 				}
 			}
 
-			if (Class->IsTransporter && *this == UNIT_APC && How_Many() < Class->Max_Passengers()) {
+			if (Class->IsTransporter && (*this == UNIT_APC || *this == UNIT_JEEP ) && How_Many() < Class->Max_Passengers()) {
 				TarComClass::Receive_Message(from, message, param);
 
 				/*
@@ -950,7 +950,7 @@ ResultType UnitClass::Take_Damage(int & damage, int distance, WarheadType warhea
 		**	Possibly have the crew member run away.
 		*/
 		Mark(MARK_UP);
-		if (Class->IsCrew && !Class->IsTransporter) {
+		if (Class->IsCrew && (!Class->IsTransporter || *this == UNIT_JEEP)) {
 			if (Random_Pick(0, 1) == 0) {
 				InfantryClass * i = 0;
 				if (Class->Primary == WEAPON_NONE) {
@@ -2530,6 +2530,7 @@ int UnitClass::Mission_Unload(void)
 	CELL		cell;
 
 	switch (Class->Type) {
+		case UNIT_JEEP:
 		case UNIT_APC:
 			switch (Status) {
 				case INITIAL_CHECK:
