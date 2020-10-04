@@ -744,11 +744,13 @@ static UnitTypeClass const UnitMCV(
 /*=============================================================================================*
  * HISTORY:                                                                                    *
  *    1993-09-03 12:01AM JLB : Created                                                         *
- *    2020-10-03 09:00PM AGR : Changed Jeep to be a transport type.
+ *    2020-10-03 09:00PM AGR : Changed Jeep to be a transport type.                            *
+ *    2020-10-03 10:30PM AGR : Changed Jeep to be able to crush infantry                       *
  *=============================================================================================*/
 // Jeep (hummer)
 static UnitTypeClass const UnitJeep(
-	UNIT_JEEP,
+	UNIT_JEEP|
+	UNIT_APC,
 	TXT_JEEP,								// NAME:			Text name of this unit type.
 	"JEEP",									// NAME:			Text name of this unit type.
 	ANIM_FRAG1,							// EXPLOSION:	Type of explosion when destroyed.
@@ -760,7 +762,7 @@ static UnitTypeClass const UnitJeep(
 		false,			// Always use the given name for the vehicle?
 		true,			//	Is this a typical transport vehicle?
 		false,			// Can it be crushed by a heavy vehicle?
-		false,			// Can this unit squash infantry?
+		true,			// Can this unit squash infantry?
 		false,			// Does this unit harvest Tiberium?
 		false,			// Is invisible to radar?
 		true,				// Is selectable by player?
