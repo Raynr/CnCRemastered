@@ -621,6 +621,11 @@ static BuildingTypeClass const ClassConst(
 	(short const *)NULL			// OVERLAPLIST:List of overlap cell offset.
 );
 
+/*=============================================================================================*
+ * HISTORY:                                                                                    *
+ *    1993-09-03 12:01AM JLB : Created                                                         *
+ *    2020-10-03 09:12PM AGR : Changed storage amount from 1000 to 2000.                       *
+ *=============================================================================================*/
 static BuildingTypeClass const ClassRefinery(
 	STRUCT_REFINERY,
 	TXT_REFINERY,							// NAME:			Short name of the structure.
@@ -668,7 +673,7 @@ static BuildingTypeClass const ClassRefinery(
 	WEAPON_NONE,WEAPON_NONE,
 	ARMOR_WOOD,								// ARMOR:		Armor type
 	0,											// CANENTER:	Units that can enter building.
-	1000,										// CAPACITY:	Spice storage capacity.
+	2000,										// CAPACITY:	Spice storage capacity.
 	10,										// POWER:		Power points required.
 	40,										// DRAIN:		Power points required.
 	BSIZE_33, 								// SIZE:			Building size.
@@ -677,6 +682,11 @@ static BuildingTypeClass const ClassRefinery(
 	(short const *)List101000111		// OVERLAPLIST:List of overlap cell offset.
 );
 
+/*=============================================================================================*
+ * HISTORY:                                                                                    *
+ *    1993-09-03 12:01AM JLB : Created                                                         *
+ *    2020-10-03 09:12PM AGR : Changed storage amount from 1500 to 3000.                       *
+ *=============================================================================================*/
 static BuildingTypeClass const ClassStorage(
 	STRUCT_STORAGE,
 	TXT_STORAGE,							// NAME:			Short name of the structure.
@@ -725,7 +735,7 @@ static BuildingTypeClass const ClassStorage(
 	WEAPON_NONE,WEAPON_NONE,
 	ARMOR_WOOD,								// ARMOR:		Armor type
 	0,											// CANENTER:	Units that can enter building.
-	1500,										// CAPACITY:	Spice storage capacity.
+	3000,										// CAPACITY:	Spice storage capacity.
 	0,											// POWER:		Power points required.
 	10,										// DRAIN:		Power points required.
 	BSIZE_21, 								// SIZE:			Building size.
