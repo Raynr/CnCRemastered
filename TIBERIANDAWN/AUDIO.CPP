@@ -121,7 +121,7 @@ struct SoundEffectNameStruct {
 	{"LAUGH1",		20, IN_NOVAR},		//	VOC_RAMBO_LAUGH		"hahaha"
 	{"LEFTY1",		20, IN_NOVAR},		//	VOC_RAMBO_LEFTY		"that was left handed" *
 	{"NOPRBLM1",	20, IN_NOVAR},		//	VOC_RAMBO_NOPROB		"no problem"
-//	{"OHSH1",		20, IN_NOVAR},		//	VOC_RAMBO_OHSH			"oh shiiiiii...."
+	{"OHSH1",		20, IN_NOVAR},		//	VOC_RAMBO_OHSH			"oh shiiiiii...."
 	{"ONIT1",		20, IN_NOVAR},		//	VOC_RAMBO_ONIT			"I'm on it"
 	{"RAMYELL1",	20, IN_NOVAR},		//	VOC_RAMBO_YELL			"ahhhhhhh"
 	{"ROKROLL1",	20, IN_NOVAR},		//	VOC_RAMBO_ROCK			"time to rock and roll"

@@ -2188,7 +2188,7 @@ typedef enum VocType : char{
 	VOC_RAMBO_LAUGH,	//	"hahaha"
 	VOC_RAMBO_LEFTY,	//	"that was left handed"
 	VOC_RAMBO_NOPROB,	//	"no problem"
-//	VOC_RAMBO_OHSH,	//	"oh shiiiiii...."
+	VOC_RAMBO_OHSH,	//	"oh shiiiiii...."
 	VOC_RAMBO_ONIT,	//	"I'm on it"
 	VOC_RAMBO_YELL,	//	"ahhhhhhh"
 	VOC_RAMBO_ROCK,	//	"time to rock and roll"

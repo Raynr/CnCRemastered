@@ -449,11 +449,11 @@ ResultType InfantryClass::Take_Damage(int & damage, int distance, WarheadType wa
 		VocType sound;
 		VocType altsound;
 		if (*this == INFANTRY_RAMBO) {
-//			if (Sim_Random_Pick(0, 3) != 1) {
+			if (Sim_Random_Pick(0, 3) != 1) {
 				sound = VOC_RAMBO_YELL;
-//			} else {
-//				sound = VOC_RAMBO_OHSH;
-//			}
+			} else {
+				sound = VOC_RAMBO_OHSH;
+			}
 			altsound = sound;
 		} else {
 			sound = Sim_Random_Pick(VOC_SCREAM1, VOC_SCREAM5);
