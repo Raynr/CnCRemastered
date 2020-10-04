@@ -3062,11 +3062,12 @@ ResultType TechnoClass::Take_Damage(int & damage, int distance, WarheadType warh
  *                                                                                             *
  * HISTORY:                                                                                    *
  *   06/20/1995 JLB : Created.                                                                 *
+ *   2020-10-03 AGR : Increased carry amount from 5 to 6.
  *=============================================================================================*/
 int TechnoTypeClass::Max_Passengers(void) const
 {
 	if (IsTransporter) {
-		return(5);
+		return(6);
 	}
 	return(0);
 }
