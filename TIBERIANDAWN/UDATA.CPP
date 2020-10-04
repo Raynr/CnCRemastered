@@ -758,7 +758,7 @@ static UnitTypeClass const UnitJeep(
 		true,				// Is a leader type?
 		false,			// Only has eight facings?
 		false,			// Always use the given name for the vehicle?
-		true,			//	Is this a typical transport vehicle?
+		false,			//	Is this a typical transport vehicle?
 		false,			// Can it be crushed by a heavy vehicle?
 		false,			// Can this unit squash infantry?
 		false,			// Does this unit harvest Tiberium?

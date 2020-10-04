@@ -668,7 +668,7 @@ static BuildingTypeClass const ClassRefinery(
 	WEAPON_NONE,WEAPON_NONE,
 	ARMOR_WOOD,								// ARMOR:		Armor type
 	0,											// CANENTER:	Units that can enter building.
-	2000,										// CAPACITY:	Spice storage capacity.
+	1000,										// CAPACITY:	Spice storage capacity.
 	10,										// POWER:		Power points required.
 	40,										// DRAIN:		Power points required.
 	BSIZE_33, 								// SIZE:			Building size.
@@ -725,7 +725,7 @@ static BuildingTypeClass const ClassStorage(
 	WEAPON_NONE,WEAPON_NONE,
 	ARMOR_WOOD,								// ARMOR:		Armor type
 	0,											// CANENTER:	Units that can enter building.
-	3000,										// CAPACITY:	Spice storage capacity.
+	1500,										// CAPACITY:	Spice storage capacity.
 	0,											// POWER:		Power points required.
 	10,										// DRAIN:		Power points required.
 	BSIZE_21, 								// SIZE:			Building size.
