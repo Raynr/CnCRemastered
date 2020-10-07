@@ -28,6 +28,12 @@
  *                                                                                             *
  *                  Last Update : September 20, 1993   [JLB]                                   *
  *                                                                                             *
+ *                                                                                             *
+ * HISTORY:                                                                                    *
+ *   1993-09-20 JLB : CREATED                                                                  *
+ *   2020-10-06 AGR : Increased range of the M16 and Pistol to be more realistic in relation...*
+ *                        to a grenade's throwing range as well as to help stop Grenaders from *
+ *                        killing their own allied infantry.                                   *
  *---------------------------------------------------------------------------------------------*
  * Functions:                                                                                  *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -73,8 +79,8 @@ COORDINATE const StoppingCoordAbs[5] = {
 WeaponTypeClass const Weapons[WEAPON_COUNT] = {
 	{BULLET_SNIPER,		125,	40,	0x0580,	VOC_SNIPER, ANIM_NONE},				//	WEAPON_RIFLE
 	{BULLET_SPREADFIRE,	25,	50,	0x0400,	VOC_MINI,	ANIM_GUN_N},			//	WEAPON_CHAIN_GUN
-	{BULLET_BULLET,		1,		7,		0x01C0,	VOC_RIFLE,	ANIM_NONE},				//	WEAPON_PISTOL
-	{BULLET_BULLET,		15,	20,	0x0200,	VOC_MGUN2,	ANIM_NONE},				//	WEAPON_M16
+	{BULLET_BULLET,		1,		7,		0x0200,	VOC_RIFLE,	ANIM_NONE},				//	WEAPON_PISTOL
+	{BULLET_BULLET,		15,	20,	0x0384,	VOC_MGUN2,	ANIM_NONE},				//	WEAPON_M16
 	{BULLET_TOW,			30,	60,	0x0400,	VOC_BAZOOKA,ANIM_NONE},				//	WEAPON_DRAGON
 	{BULLET_FLAME,			35,	50,	0x0200,	VOC_FLAMER1,ANIM_FLAME_N},			//	WEAPON_FLAMETHROWER
 	{BULLET_FLAME,			50,	50,	0x0200,	VOC_FLAMER1,ANIM_FLAME_N},			//	WEAPON_FLAME_TONGUE

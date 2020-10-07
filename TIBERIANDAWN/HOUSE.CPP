@@ -3729,7 +3729,7 @@ TechnoTypeClass const * HouseClass::Suggest_New_Object(RTTIType objecttype) cons
 									int subtype = ((InfantryTypeClass const *)(team->Class[subindex]))->Type;
 //									counter[subtype] = 1;
 									counter[subtype] = MAX(counter[subtype], (int)team->DesiredNum[subindex]);
-									counter[subtype] = MIN(counter[subtype], 5);
+									counter[subtype] = MIN(counter[subtype], 5); //Should this use the MAX_TEAM_CLASSCOUNT instead of a hard-coded 5?
 								}
 							}
 						}

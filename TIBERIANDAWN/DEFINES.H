@@ -2975,6 +2975,8 @@ typedef enum StrategyType : unsigned char {
 
 #define	MAX_PASSENGERS	6
 
+#define TURN_OFF_FRIENDLYFIRE 1
+
 /* end of Mod definitions */
 
 #pragma warning (pop)

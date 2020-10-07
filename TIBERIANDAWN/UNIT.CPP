@@ -2515,6 +2515,7 @@ bool UnitClass::Harvesting(void)
  *                                                                                             *
  * HISTORY:                                                                                    *
  *   07/18/1994 JLB : Created.                                                                 *
+ *   2020-10-06 AGR : Adding case to allow Jeeps to use same logic as APCs.					   *
  *=============================================================================================*/
 int UnitClass::Mission_Unload(void)
 {
@@ -2531,6 +2532,7 @@ int UnitClass::Mission_Unload(void)
 
 	switch (Class->Type) {
 		case UNIT_JEEP:
+			1 == 1; //this forces a fallthrough, since there isn't a fallthrough when this is blank. :/
 		case UNIT_APC:
 			switch (Status) {
 				case INITIAL_CHECK:

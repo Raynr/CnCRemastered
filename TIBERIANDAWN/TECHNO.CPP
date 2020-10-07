@@ -3002,6 +3002,7 @@ bool TechnoClass::Captured(HouseClass * newowner)
  *=============================================================================================*/
 ResultType TechnoClass::Take_Damage(int & damage, int distance, WarheadType warhead, TechnoClass * source)
 {
+	ResultType result = RESULT_NONE;
 	/*
 	**	Adjust damage according to house override armor value.
 	*/
@@ -3009,7 +3010,13 @@ ResultType TechnoClass::Take_Damage(int & damage, int distance, WarheadType warh
 		damage = damage * House->ArmorBias;
 	}
 
-	ResultType result = ObjectClass::Take_Damage(damage, distance, warhead, source);
+	//Friendly-Fire mod.
+	if (source && House->Is_Ally(source) && TURN_OFF_FRIENDLYFIRE) {	//Check if source of damamge is from an ally. If so, disable damage if "disable-friendly-fire" setting is also on.
+		//isFriendlyFire = 1; // result = RESULT_NONE;
+	}
+	else { //Friendly Fire is off, or the damge is not friendly.
+		/*ResultType*/ result = ObjectClass::Take_Damage(damage, distance, warhead, source);
+	}
 
 	switch (result) {
 		case RESULT_DESTROYED:
