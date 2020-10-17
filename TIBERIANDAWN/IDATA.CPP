@@ -195,9 +195,9 @@ static InfantryTypeClass const E2(
 	&GrenadierDos[0][0],		// Ptr to grenadier DO table (above)
 	14,							// Frame of projectile launch.
 	6,								// Frame of projectile launch while prone.
-	50,							// Strength of infantry (in damage points).
+	900,							// Strength of infantry (in damage points).
 	1,								// Sight range.
-	160,							// Cost of infantry (in credits).
+	10,							// Cost of infantry (in credits).
 	3,								// Scenario when they first appear.
 	80,10,						// Risk/Reward of this infantry unit.
 	HOUSEF_MULTI1|
