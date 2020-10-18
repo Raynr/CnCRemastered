@@ -3011,7 +3011,7 @@ ResultType TechnoClass::Take_Damage(int & damage, int distance, WarheadType warh
 	}
 
 	//Friendly-Fire mod.
-	if (source && House->Is_Ally(source) && TURN_OFF_FRIENDLYFIRE) {	//Check if source of damamge is from an ally. If so, disable damage if "disable-friendly-fire" setting is also on.
+	if (source && House->Is_Ally(source) && TURN_OFF_FRIENDLYFIRE || (IsOwnedByPlayer && TURN_ON_GOD_MODE == 1)) {	//Check if source of damamge is from an ally. If so, disable damage if "disable-friendly-fire" setting is also on, or if God mode is on.
 		//isFriendlyFire = 1; // result = RESULT_NONE;
 	}
 	else { //Friendly Fire is off, or the damge is not friendly.

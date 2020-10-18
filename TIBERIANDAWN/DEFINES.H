@@ -2977,6 +2977,8 @@ typedef enum StrategyType : unsigned char {
 
 #define TURN_OFF_FRIENDLYFIRE 1
 
+#define TURN_ON_GOD_MODE 1
+
 /* end of Mod definitions */
 
 #pragma warning (pop)

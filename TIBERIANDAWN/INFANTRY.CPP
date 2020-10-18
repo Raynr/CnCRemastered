@@ -722,7 +722,7 @@ void InfantryClass::Per_Cell_Process(bool center)
 			building->IsGoingToBlow = true;
 			building->Clicked_As_Target(PlayerPtr->Class->House, 20); // 2019/09/20 JAS - Added record of who clicked on the object
 			building->Clicked_As_Target(building->Owner(), 20);
-			building->CountDown.Set(20);
+			building->CountDown.Set(40);
 			building->WhomToRepay = As_Target();
 			Special.IsScatter = true;
 			NavCom = TARGET_NONE;

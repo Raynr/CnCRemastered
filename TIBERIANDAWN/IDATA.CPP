@@ -593,7 +593,7 @@ static InfantryTypeClass const Commando(
 	HOUSEF_GOOD|
 	HOUSEF_BAD,					// Who can own this infantry unit.
 	WEAPON_RIFLE,WEAPON_NONE,
-	MPH_SLOW_ISH			// Maximum speed of infantry.
+	MPH_MEDIUM_SLOW			// Maximum speed of infantry.
 );
 
 // Civilians
